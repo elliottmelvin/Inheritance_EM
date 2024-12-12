@@ -1,8 +1,27 @@
 package Ex3_MusicFestival;
 
- class SmallStageEvent extends Event{
+import java.util.ArrayList;
 
-  public int numMembers;
+class SmallStageEvent extends Event{
 
-  public SmallStageEvent()
+  public int numGroups;
+
+  public SmallStageEvent(String n, String t, int ng){
+   super(n, t);
+   numGroups = ng;
+
+   super.setLocation("Small Stage");
+  }
+
+  public void giveCheer(){
+    int numCheers = 0;
+
+    if(this.getEventType().equals("Music")){
+        numCheers += 50;
+    }
+
+    if(numGroups > 1){
+
+      }
+  }
 }
