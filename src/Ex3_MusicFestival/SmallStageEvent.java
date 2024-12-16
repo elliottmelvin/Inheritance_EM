@@ -13,7 +13,7 @@ class SmallStageEvent extends Event{
    super.setLocation("Small Stage");
   }
 
-  public void giveCheer(){
+  public void cheer(){
     int numCheers = 0;
 
     if(this.getEventType().equals("Music")){
@@ -21,7 +21,7 @@ class SmallStageEvent extends Event{
     }
 
     if(numGroups > 1){
-
+        numCheers += 80;
       }
   }
 }
