@@ -16,7 +16,9 @@ class NonMusicEvent extends Event {
         this.rent = r;
     }
 
-
+//    public void printMe(){
+//        System.out.println("Name: " + eventName + "   Type: " + eventType + "   Location: " + location + "   Time: " + time + "   Number of Players: " + "   Rent: " + rent);
+//    }
 
 
 
