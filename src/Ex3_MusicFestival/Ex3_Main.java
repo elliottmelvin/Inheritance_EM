@@ -160,7 +160,10 @@ public class Ex3_Main {
                 int foundIndex = searchMainStageEvent(searchEvent, allEvents);
 
                 if(foundIndex > -1){
-                    System.out.println("fill this in");
+                    System.out.println("What is the requirements for the tech?");
+                    String techRec = Library.input.nextLine();
+
+                   addMainStageTech(allEvents.get(foundIndex), techRec);
                 }
             }
         }
@@ -185,7 +188,7 @@ public class Ex3_Main {
         if(list.size() == 0) {return -1;} // escaping return
 
         for (int i = 0; i < list.size(); i++) {
-            if((list.get(i).getEventName().equalsIgnoreCase(n) && (list.get(i) instanceof MainStageEvent)){
+            if((list.get(i).getEventName().equalsIgnoreCase(n) && (list.get(i) instanceof MainStageEvent))){
                 return i;
             }
         }
@@ -195,5 +198,12 @@ public class Ex3_Main {
 
         return -1;
     }
+
+    public static void addMainStageTech(Event searchedEvent, String techInput){
+        ((MainStageEvent) searchedEvent).addTech(techInput);
+
+        ((MainStageEvent) searchedEvent).printTech();
+    }
+
 
 }
