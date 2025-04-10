@@ -30,11 +30,20 @@ public class FamilyTreeMain {
         person1.children.get(1).children.get(0).addChild(new Person("Johnin", "Whoville"));
         person1.children.get(1).children.get(0).children.get(1).addChild(new Person("Bilbo", "The Shire"));
 
-        System.out.print("The number of people in " + person1.name + "'s family is:  ");
-        System.out.println(countFamily(person1, 0));
+        person1.addChild(new Person("Hans", "Canada"));
+        person1.children.get(3).addChild(new Person("Alan", "England"));  //Hans' child
 
-//        printFamly(person1);
-//        printCanadians(person1);
+        System.out.print("The number of people in " + person1.name + "'s family is:  ");
+        System.out.println(countFamily(person1));
+        System.out.println();
+
+        System.out.println("Printing the entire family:");
+        printFamly(person1);
+        System.out.println();
+
+        System.out.println("Printing all Canadians");
+        printCanadians(person1);
+        System.out.println();
 
         System.out.println("What is the name of the person you would like to start with?");
         String startName = Library.input.nextLine();
@@ -45,14 +54,13 @@ public class FamilyTreeMain {
 
 
 
-    public static int countFamily(Person ptemp, int numCount){
-        //counts the number of people
-        int num = numCount;
+    public static int countFamily(Person ptemp){
+        int num = 1;
 
         for (int i = 0; i < ptemp.children.size(); i++) {
-            num += 1;
-            countFamily((ptemp.children.get(i)), num);
+            num += countFamily(ptemp.children.get(i));
         }
+
         return num;
     }
 

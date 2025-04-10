@@ -17,8 +17,8 @@ public class Main {
 //        Ex3_Sudoku.run();
 //        As1_Bingo.run();
 //        As2_Vigenere.run();
-        FamilyTreeMain.run();
-//        As1_Main.run();
+//        FamilyTreeMain.run();
+        As1_Main.run();
     }
 
 

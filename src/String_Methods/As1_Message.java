@@ -42,26 +42,28 @@ public class As1_Message {
     }
 
     public boolean scanWarning(String keyword){
-        System.out.println(fullMessage.charAt(fullMessage.indexOf(keyword) - 1));
         if(fullMessage.contains(keyword)){
-            if((fullMessage.indexOf(keyword) == 0) && (fullMessage.charAt(keyword.length() + 1) == (' '))){
-                return true;
+            int keyIndex = fullMessage.indexOf(keyword);
+            int numSub = -1;
+            int numAdd = 1;
+
+            if(keyIndex == 0){
+                numSub = 0;
+            }
+            if(keyIndex + keyword.length() == fullMessage.length()){
+                numAdd = 0;
             }
 
-            else if((fullMessage.charAt(fullMessage.indexOf(keyword) - 1) == (' ')) && (fullMessage.charAt(fullMessage.indexOf(keyword) + keyword.length() + 1) == (' '))){
-                return true;
-            }
-            
-            else if((fullMessage.indexOf(keyword) + keyword.length() == fullMessage.length()) && (fullMessage.charAt(fullMessage.length() - keyword.length() - 1) == (' '))){
-                return true;
-            }
+            String foundKey = fullMessage.substring(keyIndex + numSub, keyIndex + keyword.length() + numAdd);
 
+            System.out.println(foundKey.trim());
+            if(foundKey.trim().equals(keyword)){
+                return true;
+            }
             else{
                 return false;
             }
         }
-        else{
-            return false;
-        }
+        return false;
     }
 }
