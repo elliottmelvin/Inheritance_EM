@@ -47,13 +47,15 @@ public class As1_Message {
             if((fullMessage.indexOf(keyword) == 0) && (fullMessage.charAt(keyword.length() + 1) == (' '))){
                 return true;
             }
-            else if((fullMessage.indexOf(keyword) + keyword.length() == fullMessage.length()) && (fullMessage.charAt(fullMessage.length() - keyword.length() - 1) == (' '))){
-                return true;
-            }
 
             else if((fullMessage.charAt(fullMessage.indexOf(keyword) - 1) == (' ')) && (fullMessage.charAt(fullMessage.indexOf(keyword) + keyword.length() + 1) == (' '))){
                 return true;
             }
+            
+            else if((fullMessage.indexOf(keyword) + keyword.length() == fullMessage.length()) && (fullMessage.charAt(fullMessage.length() - keyword.length() - 1) == (' '))){
+                return true;
+            }
+
             else{
                 return false;
             }

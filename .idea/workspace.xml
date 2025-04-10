@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="Everything" />
+    <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="Everything">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Family_Tree/FamilyTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Family_Tree/FamilyTreeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Family_Tree/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Family_Tree/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/String_Methods/As1_Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String_Methods/As1_Message.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/elliottmelvin/Inheritance_EM.git&quot;,
-    &quot;accountId&quot;: &quot;17f79657-24c6-4183-8366-bd34c6a077b2&quot;
+    &quot;accountId&quot;: &quot;0862b354-fcb6-40fe-9737-9c3220e2b0a5&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">

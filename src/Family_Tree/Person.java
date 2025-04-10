@@ -19,5 +19,11 @@ public class Person {
         children.add(p);
     }
 
+    public void printMe(){
+        System.out.println(name);
+    }
 
+    public String getName(){
+        return name;
+    }
 }
